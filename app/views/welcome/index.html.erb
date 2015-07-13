@@ -1,0 +1,10 @@
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<p>Search for a word:</p>
+<form action="/search" method="GET">
+  <input type="text" name="keyword" id="keyword"/>
+
+  <input type="submit" value="Search"/>
+</form>
